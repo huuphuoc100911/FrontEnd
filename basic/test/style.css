@@ -18,3 +18,15 @@
     background-clip: text;
     -webkit-background-clip: text;
 }
+
+.chapter {
+    background: #ccc;
+    height: 600px;
+    overflow: scroll;
+}
+
+.chapter-item {
+    background: orange;
+    position: sticky;
+    top: 0;
+}
