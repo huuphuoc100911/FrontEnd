@@ -1,0 +1,20 @@
+.example *:not(p) {
+    color: violet;
+}
+
+.box {
+    height: 800px;
+    border: 3px dotted #ccc;
+    margin: 30px;
+    background-image: url(https://images.unsplash.com/photo-1700685188583-bbd552984349?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: 2500px;
+    background-position: center center;
+}
+
+.hightlight {
+    color: transparent;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
