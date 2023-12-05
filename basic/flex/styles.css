@@ -10,7 +10,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     line-height: 1.5;
     background-color: #ebebeb;
 }
@@ -103,7 +103,8 @@ body {
     flex: 3;
 }
 
-.sidebar-two {}
+.sidebar-two {
+}
 
 /******************** Feature layout ********************/
 .feature-layout {
@@ -136,10 +137,12 @@ body {
 
 .feature-item:nth-child(2) {
     background-color: #ff9a8b;
-    background-image: linear-gradient(90deg,
-            #ff9a8b 0%,
-            #ff6a88 55%,
-            #ff99ac 100%);
+    background-image: linear-gradient(
+        90deg,
+        #ff9a8b 0%,
+        #ff6a88 55%,
+        #ff99ac 100%
+    );
 }
 
 .feature-item:nth-child(3) {
@@ -205,10 +208,12 @@ body {
     border-radius: 16px;
     color: #fff;
     background-color: #ff3cac;
-    background-image: linear-gradient(225deg,
-            #ff3cac 0%,
-            #784ba0 50%,
-            #2b86c5 100%);
+    background-image: linear-gradient(
+        225deg,
+        #ff3cac 0%,
+        #784ba0 50%,
+        #2b86c5 100%
+    );
 }
 
 .center-layout .item {
