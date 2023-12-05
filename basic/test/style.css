@@ -30,3 +30,12 @@
     position: sticky;
     top: 0;
 }
+
+.pseudo::first-line {
+    color: red;
+}
+
+.pseudo::first-letter {
+    font-size: 50px;
+    color: blue
+}
