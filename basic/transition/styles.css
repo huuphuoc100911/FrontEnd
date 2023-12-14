@@ -1,0 +1,393 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 100px 0;
+    font-family: system-ui, sans-serif;
+}
+
+input,
+select,
+textarea,
+button {
+    font-family: inherit;
+}
+
+header {
+    margin-top: 200px;
+    height: 160px;
+    background: linear-gradient(-180deg, #f53d2d, #f63);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* Cart btn */
+.cart-btn {
+    position: relative;
+    padding: 10px 0;
+    margin-left: 0 0;
+    color: #fff;
+    font-size: 20px;
+}
+
+.cart-btn:hover .cart-preview {
+    opacity: 1;
+    visibility: visible;
+    scale: 1;
+}
+
+/* Cart preview */
+.cart-preview {
+    position: absolute;
+    top: 46px;
+    right: -8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 250px;
+    min-height: 120px;
+    padding: 10px;
+    border-radius: 3px;
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.3));
+    background: #fff;
+    transform-origin: 93% 0;
+    scale: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+/* Cart arrow top */
+.cart-preview::before {
+    content: '';
+    position: absolute;
+    top: -18px;
+    right: 8px;
+    border: 10px solid;
+    border-color: transparent transparent #fff;
+}
+
+.cart-message {
+    color: #333;
+    font-size: 14px;
+}
+
+.section {
+    position: relative;
+}
+
+.section::before {
+    content: "";
+    position: absolute;
+    top: -120px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 86px;
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    z-index: -1;
+    rotate: -4deg;
+    border-radius: 15px;
+}
+
+.section .hero {
+    max-width: 80%;
+    padding: 16px 0;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.hero p {
+    margin: 0 auto;
+}
+
+.content {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+.btn {
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin: 30px 0;
+    color: #fff;
+    background: #5eb9f0;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.25s ease-in-out;
+}
+
+.btn-1:hover {
+    translate: 0 -15px;
+    box-shadow: 0px 16px 27px 3px rgba(0, 0, 0, 0.56);
+    -webkit-box-shadow: 0px 16px 27px 3px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 0px 16px 27px 3px rgba(0, 0, 0, 0.56);
+}
+
+.btn-2:hover {
+    background: orange;
+}
+
+/* .text {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.text::before {
+    content: attr(data-text);
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    right: 0;
+    width: 0;
+    color: #f63;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 0.5s;
+}
+
+.text:hover::before {
+    justify-content: flex-start;
+    left: 0;
+    width: 100%;
+} */
+
+.text {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+.text::before {
+    content: attr(data-text);
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    color: #f63;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 0.5s;
+}
+
+.text:hover::before {
+    align-items: flex-start;
+    top: 0;
+    height: 100%;
+}
+
+
+input {
+    outline: none;
+}
+
+.input-text {
+    position: relative;
+}
+
+.input-text input,
+.input-text label {
+    font-size: 1.4rem;
+}
+
+.input-text input {
+    width: 230px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.5s;
+}
+
+.input-text input:focus {
+    border-color: blueviolet;
+}
+
+.input-text input:focus+label,
+.input-text input:not(:placeholder-shown)+label {
+    translate: 0 -44px;
+    color: blueviolet;
+    text-shadow: -0.1px -0.1px currentColor, 0.1px 0.1px;
+}
+
+.input-text label {
+    position: absolute;
+    color: #666;
+    left: 7px;
+    padding: 0 5px;
+    top: 50%;
+    translate: 0 -50%;
+    background: #fff;
+    transition: 0.25s;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background: orange;
+    margin: 0 auto;
+    animation-name: spinner;
+    animation-duration: 1s;
+}
+
+@keyframes spinner {
+    from {
+        rotate: 0;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+.loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+    translate: -50% -50%;
+    width: 100px;
+    height: 100px;
+}
+
+.loading.inner {
+    position: absolute;
+}
+
+.loading::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 5px solid red;
+    border-color: red transparent;
+    border-radius: 50%;
+    animation: spinner 1s infinite;
+}
+
+.loading[data-text]::after {
+    content: attr(data-text);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    translate: -50%;
+    white-space: nowrap;
+}
+
+.box-animation {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    background: #ccc;
+}
+
+.sticker {
+    width: 131.5px;
+    height: 131.5px;
+    background: url(https://images.viblo.asia/54edb252-47ae-4c41-8bd8-6dda83f6cd7c.png);
+    animation: run 1s infinite steps(1);
+}
+
+@keyframes run {
+    0% {
+        background-position: -0px -0px;
+    }
+
+    6.25% {
+        background-position: -131.5px -0px;
+    }
+
+    12.5% {
+        background-position: -263px -0px;
+    }
+
+    18.75% {
+        background-position: -394.5px -0px;
+    }
+
+    25% {
+        background-position: -0px -131.5px;
+    }
+
+    31.25% {
+        background-position: -131.5px -131.5px;
+    }
+
+    37.5% {
+        background-position: -263px -131.5px;
+    }
+
+    43.75% {
+        background-position: -394.5px -131.5px;
+    }
+
+    50% {
+        background-position: -0px -263px;
+    }
+
+    56.25% {
+        background-position: -131.5px -263px;
+    }
+
+    62.5% {
+        background-position: -263px -263px;
+    }
+
+    68.75% {
+        background-position: -394.5px -263px;
+    }
+
+    75% {
+        background-position: -0px -394.5px;
+    }
+
+    81.25% {
+        background-position: -131.5px -394.5px;
+    }
+
+    87.5% {
+        background-position: -263px -394.5px;
+    }
+
+    93.75% {
+        background-position: -394.5px -394.5px;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
