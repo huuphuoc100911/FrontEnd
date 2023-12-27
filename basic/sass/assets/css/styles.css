@@ -1,0 +1,75 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+.card {
+  margin: 0 auto;
+  width: 20%;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+.card .thumb {
+  width: 100%;
+}
+.card .title {
+  font-size: 22px;
+}
+.card .desc {
+  font-size: 18px;
+}
+.card .btn-link {
+  color: #666;
+}
+
+.part {
+  margin: 0 auto;
+  width: 20%;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+.part-thumb {
+  width: 100%;
+}
+.part-title {
+  font-size: 22px;
+}
+.part-desc {
+  font-size: 18px;
+}
+.part-btn-link {
+  color: #666;
+}
+
+.part-bem {
+  margin: 0 auto;
+  width: 20%;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+.part-bem__thumb {
+  width: 100%;
+}
+.part-bem__title {
+  font-size: 22px;
+}
+.part-bem__desc {
+  font-size: 18px;
+}
+.part-bem__btn-link {
+  color: #666;
+}
+
+/*# sourceMappingURL=styles.css.map */
