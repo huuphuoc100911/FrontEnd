@@ -10,78 +10,30 @@ body {
         sans-serif;
 }
 
-.container {
+@mixin flexCenter {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.card {
-    margin: 0 auto;
-    width: 20%;
-    padding: 20px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-
-    .thumb {
-        width: 100%;
-    }
-
-    .title {
-        font-size: 22px;
-    }
-
-    .desc {
-        font-size: 18px;
-    }
-
-    .btn-link {
-        color: #666;
-    }
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
 }
 
-.part {
-    margin: 0 auto;
-    width: 20%;
-    padding: 20px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-
-    &-thumb {
-        width: 100%;
-    }
-
-    &-title {
-        font-size: 22px;
-    }
-
-    &-desc {
-        font-size: 18px;
-    }
-
-    &-btn-link {
-        color: #666;
-    }
+.center {
+    @include flexCenter;
+    @include size(200px);
+    background: orange;
+    font-size: 30px;
+    font-weight: 600;
 }
 
-.part-bem {
-    margin: 0 auto;
-    width: 20%;
-    padding: 20px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-
-    &__thumb {
-        width: 100%;
-    }
-
-    &__title {
-        font-size: 22px;
-    }
-
-    &__desc {
-        font-size: 18px;
-    }
-
-    &__btn-link {
-        color: #666;
-    }
+.box {
+    @include flexCenter;
+    @include size(100px, 100px);
+    margin-top: 30px;
+    background: green;
+    font-size: 20px;
+    font-weight: 500;
 }
